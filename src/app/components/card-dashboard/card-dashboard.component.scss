@@ -1,0 +1,18 @@
+.card{
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+  border: 1px solid #FF2978;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: #FF2978;
+    color: white;
+}
+
+h3 {
+  font-size: 20px;
+}
+

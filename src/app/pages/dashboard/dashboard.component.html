@@ -1,1 +1,34 @@
-<p>dashboard works!</p>
+<div class="container">
+  <div class="row justify-content-center align-items-center ">
+    <div style="border-right: 1px solid #180f4a;" class="col-6 ">
+      <h2 id="dash-title">Você achou a melhor</h2>
+      <h2 class="large-word">Agência Digital</h2>
+      <p class="text-secondary">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis hic ab aliasquam
+        iusto exercitationem quisquam quas enim numquam laborum totam dolorum, commodi dolor
+        labore quod sit, incidunt ipsam aspernatur!</p>
+      <button routerLink="/fale-conosco" class="btn-contact mt-2">Entre em contato</button>
+    </div>
+    <div class="col-6 text-center margTop">
+      <img class="img" src="assets/markting.png">
+    </div>
+  </div>
+
+
+
+  <div class="row mb-5">
+    <div class="text-center mb-5">
+      <h2 id="dash-title-2">O que podemos fazer pelo seu negócio?</h2>
+    </div>
+    <div class="col-12  text-center">
+      <app-card-dashboard class="col-4 p-1" [imagemUrl]="urlDaImagemPc" [title]="titleSites | titlecase">
+      </app-card-dashboard>
+
+      <app-card-dashboard class="col-4  p-1" [imagemUrl]="urlDaImagemCell" [title]="titleApps | titlecase">
+      </app-card-dashboard>
+
+      <app-card-dashboard class="col-4  p-1" [imagemUrl]="urlDaImagemPc" [title]="titleMarkting | titlecase">
+      </app-card-dashboard>
+    </div>
+  </div>
+</div>

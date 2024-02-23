@@ -1,0 +1,26 @@
+.minhaNav {
+  background: #FFFF;
+  position: fixed;
+  border-bottom:1px solid #180f4a;
+}
+
+.btn-faleconosco {
+  border-radius: 5px;
+  background: #180f4a;
+  color: #FFFF;
+  border: none;
+  font-size: 20px;
+  padding: 7px;
+}
+
+.btn-faleconosco:hover {
+  background: #FF2978;
+  color: #180f4a;
+  font-weight: bold;
+}
+
+#logo {
+  font-family: 'Lobster', cursive;
+    color: #180f4a;
+    font-size: 34px;
+}
