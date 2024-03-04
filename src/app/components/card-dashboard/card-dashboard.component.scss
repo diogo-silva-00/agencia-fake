@@ -1,18 +1,13 @@
-.card{
-  display: inline-block;
-  width: 350px;
+.cartao {
   height: 350px;
-  border: 1px solid #FF2978;
+  border: 1px solid #180f4a;
   border-radius: 10px;
+  padding: 5px;
   cursor: pointer;
 }
 
-.card:hover {
-  background: #FF2978;
-    color: white;
+.cartao:hover {
+  border: px solid #FF2978;
+  background-color: #180f4a;
+  color: #FFFF;
 }
-
-h3 {
-  font-size: 20px;
-}
-
