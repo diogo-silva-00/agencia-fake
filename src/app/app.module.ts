@@ -11,6 +11,7 @@ import { CardDashboardComponent } from './components/card-dashboard/card-dashboa
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { SobreNosComponent } from './pages/sobre-nos/sobre-nos.component';
 import { ServicosComponent } from './pages/servicos/servicos.component';
+import { FaleConoscoFormComponent } from './pages/fale-conosco/fale-conosco-form/fale-conosco-form.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ServicosComponent } from './pages/servicos/servicos.component';
     CardDashboardComponent,
     NavbarComponent,
     SobreNosComponent,
-    ServicosComponent
+    ServicosComponent,
+    FaleConoscoFormComponent
   ],
   imports: [
     BrowserModule,

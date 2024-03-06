@@ -1,1 +1,22 @@
-<p>servicos works!</p>
+
+<div class="container " style="margin-top: 150px;">
+  <div class="text-center">
+    <h2 class="large-word ">Especialidade em diversas áreas</h2>
+  </div>
+  <div class="text-center ">
+    <div class="mt-2">
+      <app-card-dashboard class="col-12 p-1" [imagemUrl]="urlDaImagemPc" [title]="titleSites | titlecase" [texto]="textocard">
+      </app-card-dashboard>
+    </div>
+
+    <div class="mt-2">
+      <app-card-dashboard class="col-12  p-1" [imagemUrl]="urlDaImagemCell" [title]="titleApps | titlecase" [texto]="textocard">
+      </app-card-dashboard>
+    </div>
+
+    <div class="mt-2">
+      <app-card-dashboard class="col-12  p-1" [imagemUrl]="urlDaImagemPc" [title]="titleMarkting | titlecase" [texto]="textocard">
+      </app-card-dashboard>
+    </div>
+  </div>
+</div>

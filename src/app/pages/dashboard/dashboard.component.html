@@ -3,7 +3,7 @@
     <div class="col-lg-6 col-sm-12 ">
       <h2 id="dash-title">Você achou a melhor</h2>
       <h2 class="large-word">Agência Digital</h2>
-      <p class="text-secondary">
+      <p class="text-secondary" style="text-align: justify;">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis hic ab aliasquam
         iusto exercitationem quisquam quas enim numquam laborum totam dolorum, commodi dolor
         labore quod sit, incidunt ipsam aspernatur!</p>
@@ -20,13 +20,13 @@
   </div>
 
   <div class="row text-center ">
-    <app-card-dashboard class="col-lg-4 col-sm-12 p-1" [imagemUrl]="urlDaImagemPc" [title]="titleSites | titlecase">
+    <app-card-dashboard  class="col-lg-4 col-sm-12 p-1" [imagemUrl]="urlDaImagemPc" [title]="titleSites | titlecase" [texto]="textocard">
     </app-card-dashboard>
 
-    <app-card-dashboard class="col-lg-4 col-sm-12  p-1" [imagemUrl]="urlDaImagemCell" [title]="titleApps | titlecase">
+    <app-card-dashboard class="col-lg-4 col-sm-12  p-1" [imagemUrl]="urlDaImagemCell" [title]="titleApps | titlecase" [texto]="textocard">
     </app-card-dashboard>
 
-    <app-card-dashboard class="col-lg-4 col-sm-12  p-1" [imagemUrl]="urlDaImagemPc" [title]="titleMarkting | titlecase">
+    <app-card-dashboard class="col-lg-4 col-sm-12  p-1" [imagemUrl]="urlDaImagemPc" [title]="titleMarkting  | titlecase" [texto]="textocard">
     </app-card-dashboard>
   </div>
 </div>
