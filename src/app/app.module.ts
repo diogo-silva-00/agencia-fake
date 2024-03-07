@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +14,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { SobreNosComponent } from './pages/sobre-nos/sobre-nos.component';
 import { ServicosComponent } from './pages/servicos/servicos.component';
 import { FaleConoscoFormComponent } from './pages/fale-conosco/fale-conosco-form/fale-conosco-form.component';
+import { PhoneMaskDirective } from './_directtives/phone-mask.directive';
 
 @NgModule({
   declarations: [
@@ -23,12 +26,15 @@ import { FaleConoscoFormComponent } from './pages/fale-conosco/fale-conosco-form
     NavbarComponent,
     SobreNosComponent,
     ServicosComponent,
-    FaleConoscoFormComponent
+    FaleConoscoFormComponent,
+    PhoneMaskDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

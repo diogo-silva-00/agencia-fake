@@ -55,4 +55,10 @@ body{
   color: $cor-primaria;
 }
 
+.validation-error {
+  font-size: 13px;
+  color: red;
+  border-left: 2px solid red;
+}
+
 
