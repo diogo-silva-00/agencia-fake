@@ -7,9 +7,9 @@
     <div class="w-75 mx-auto validation-error" *ngIf="nome.invalid && formDir.submitted">
         <p >O nome é obrigatório.</p>
     </div>
-    <input class="w-75 p-1 mb-1" type="text" placeholder="Número de celular" formControlName="cell" required appPhoneMask maxlength="15"> <br>
+    <input [(ngModel)]="inputValue" minlength="15" class="w-75 p-1 mb-1" type="text" placeholder="Número de celular" formControlName="cell" required appPhoneMask maxlength="15"> <br>
     <div class="w-75 mx-auto validation-error" *ngIf="cell.invalid && formDir.submitted">
-        <p >O número é obrigatório.</p>
+        <p >Campo vazio ou incompleto.</p>
     </div>
     <input class="w-75 p-1 mb-1" type="text" placeholder="E-mail" formControlName="email" required appEmailValidator> <br>
     <div class="w-75 mx-auto validation-error" *ngIf="email.invalid && formDir.submitted">

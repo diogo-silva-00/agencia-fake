@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class FaleConoscoFormComponent {
   @Output() changeSubmit: EventEmitter<any> = new EventEmitter()
+  inputValue = ''
 
   expression = false
 

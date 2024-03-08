@@ -16,6 +16,7 @@ import { ServicosComponent } from './pages/servicos/servicos.component';
 import { FaleConoscoFormComponent } from './pages/fale-conosco/fale-conosco-form/fale-conosco-form.component';
 import { PhoneMaskDirective } from './_directtives/phone-mask.directive';
 import { ModalMessageComponent } from './components/modal-message/modal-message.component';
+import { MinLengthDirective } from './_directtives/min-length.directive';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ModalMessageComponent } from './components/modal-message/modal-message.
     FaleConoscoFormComponent,
     PhoneMaskDirective,
     ModalMessageComponent,
+    MinLengthDirective
   ],
   imports: [
     BrowserModule,
