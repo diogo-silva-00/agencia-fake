@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -8,6 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./fale-conosco-form.component.scss']
 })
 export class FaleConoscoFormComponent {
+  @Output() changeSubmit: EventEmitter<any> = new EventEmitter()
+
+  expression = false
 
   contactForm!: FormGroup
 
@@ -41,8 +44,17 @@ export class FaleConoscoFormComponent {
 
     setTimeout(() => {
       this.router.navigate(['/']);
-    }, 2000)
+    }, 3000)
 
-    alert('Contato enviado')
+    this.expression = true
+  }
+
+  handleClick() {
+    this.changeSubmit.emit()
+  }
+
+  OnChangeClose() {
+    this.expression = false
+    this.router.navigate(['/']);
   }
 }

@@ -15,6 +15,11 @@
     <div class="w-75 mx-auto validation-error" *ngIf="email.invalid && formDir.submitted">
         <p >O email é obrigatório.</p>
     </div>
-    <button class="btn-faleconosco w-75 pt-1 mt-1">Enviar</button>
+    <button (click)="handleClick()" class="btn-faleconosco w-75 pt-1 mt-1">Enviar</button>
+</div>
+
+<div *ngIf="expression">
+  <app-modal-message (changeClose)="OnChangeClose()"></app-modal-message>
 </div>
 </form>
+

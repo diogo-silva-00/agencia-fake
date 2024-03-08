@@ -15,6 +15,7 @@ import { SobreNosComponent } from './pages/sobre-nos/sobre-nos.component';
 import { ServicosComponent } from './pages/servicos/servicos.component';
 import { FaleConoscoFormComponent } from './pages/fale-conosco/fale-conosco-form/fale-conosco-form.component';
 import { PhoneMaskDirective } from './_directtives/phone-mask.directive';
+import { ModalMessageComponent } from './components/modal-message/modal-message.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PhoneMaskDirective } from './_directtives/phone-mask.directive';
     SobreNosComponent,
     ServicosComponent,
     FaleConoscoFormComponent,
-    PhoneMaskDirective
+    PhoneMaskDirective,
+    ModalMessageComponent,
   ],
   imports: [
     BrowserModule,
